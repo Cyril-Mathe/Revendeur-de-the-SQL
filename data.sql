@@ -11,16 +11,16 @@ insert into clients ( society, address, mail) values ("AlphaVision Consulting", 
 insert into clients ( society, address, mail) values ("GreenFuture Industries", "89 Boulevard Haussmann, 75009 Paris, France","greenfutureindustries@gmail.com");
 
 --ajout de données produits
-insert into produits ( name , price ) values ("Thé vert Sencha", 0.12);
-insert into produits ( name , price ) values ("Thé noir Assam", 0.10);
-insert into produits ( name , price ) values ("Thé blanc Pai Mu Tan", 0.15);
-insert into produits ( name , price ) values ("Rooibos Vanille", 0.08);
-insert into produits ( name , price ) values ("Matcha Cérémonial", 0.50);
+insert into produits ( name , price_per_gram ) values ("Thé vert Sencha", 0.12);
+insert into produits ( name , price_per_gram ) values ("Thé noir Assam", 0.10);
+insert into produits ( name , price_per_gram ) values ("Thé blanc Pai Mu Tan", 0.15);
+insert into produits ( name , price_per_gram ) values ("Rooibos Vanille", 0.08);
+insert into produits ( name , price_per_gram ) values ("Matcha Cérémonial", 0.50);
 
 --ajout de données 
-insert into ventes (client_id ,product, quantity, date) values (1,"Thé vert Sencha", 100 , "2025-02-02");
-insert into ventes (client_id ,product, quantity, date) values (2,"Thé noir Assam", 200 , "2025-02-02");
-insert into ventes (client_id ,product, quantity, date) values (3,"Thé blanc Pai Mu Tan", 150 , "2025-02-08");
-insert into ventes (client_id ,product, quantity, date) values (1,"Thé blanc Pai Mu Tan", 250 , "2025-02-04");
-insert into ventes (client_id ,product, quantity, date) values (9,"Rooibos Vanille", 350 , "2025-02-05");
-insert into ventes (client_id ,product, quantity, date) values (7,"Matcha Cérémonial", 50 , "2025-01-30");
+insert into ventes (client_id ,product_id, quantity, date) values (1, 1, 100 , "2025-02-02");
+insert into ventes (client_id ,product_id, quantity, date) values (2, 2, 200 , "2025-02-02");
+insert into ventes (client_id ,product_id, quantity, date) values (3, 3, 150 , "2025-02-08");
+insert into ventes (client_id ,product_id, quantity, date) values (1, 3, 250 , "2025-02-04");
+insert into ventes (client_id ,product_id, quantity, date) values (9, 4, 350 , "2025-02-05");
+insert into ventes (client_id ,product_id, quantity, date) values (7, 5, 50 , "2025-01-30");
